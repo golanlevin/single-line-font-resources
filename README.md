@@ -29,4 +29,4 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 
 ### Keywords
 
-vector font, single line font, single stroke font, #plotterTwitter, procedural font, creative coding
+vector font, single line font, single stroke font, mono line font, engraving font, AxiDraw, Hershey font, #plotterTwitter, procedural font, creative coding
