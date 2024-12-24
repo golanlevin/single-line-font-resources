@@ -1,4 +1,4 @@
-# single-line-font-resources
+# p5-single-line-font-resources
 
 Repository of miscellaneous single-line fonts, for creative coding
 
