@@ -6,10 +6,10 @@ Repository of procedural single-line vector fonts — for creative coding, plot
 
 ### p5.js port of Kamp's HP1345A vector font
 
-Poul-Henning Kamp [reverse-engineered the character generator](https://phk.freebsd.dk/hacks/Wargames/index.html) on the HP1345A digital vector display (c.1985). This p5.js version is adapted from his work, and loads the original ROM binaries.
+Poul-Henning Kamp [reverse-engineered the character generator](https://phk.freebsd.dk/hacks/Wargames/index.html) on the HP1345A digital vector display (c.1985). This p5.js version is adapted from his work, and loads data from the original ROM binaries.
 
-* In [this repository](HP1345A_single_line_font/sketch.js)
-* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
+* In [this repository](HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
+* Data-inlined version [here](HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
 
 ![hp1345a_screenshot.png](HP1345A_single_line_font/hp1345a_screenshot.png)
 
