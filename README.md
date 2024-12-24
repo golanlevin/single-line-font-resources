@@ -24,3 +24,9 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/OmiU51Gdm)
 
 ![asteroids_screenshot.png](Asteroids_single_line_font/asteroids_screenshot.png)
+
+---
+
+### Keywords
+
+vector font, single line font, single stroke font, #plotterTwitter, procedural font, creative coding
