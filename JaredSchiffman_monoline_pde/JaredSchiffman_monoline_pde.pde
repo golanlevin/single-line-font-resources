@@ -1,15 +1,14 @@
-JaredShiffmanFont JSF; 
+JaredSchiffmanFont JSF; 
 
 void setup(){
   size (1000,200); 
-  JSF = new JaredShiffmanFont(); 
-  
+  JSF = new JaredSchiffmanFont(); 
   println("numPoints = " + JSF.F.letters[44].numPoints); 
 }
 
 void draw(){
-  background(255); 
-  stroke(0); 
+  background(0); 
+  stroke(255); 
   noFill(); 
   
   String myString = "1234567890abcdefghijklmnopqrstuvwxyz"; //Jared's Monospace Monoline";

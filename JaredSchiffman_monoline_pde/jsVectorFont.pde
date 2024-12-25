@@ -1,4 +1,4 @@
-// By Jared Shiffman https://www.perchinteractive.com/
+// By Jared Schiffman https://www.perchinteractive.com/
 // MIT Media Lab ACG (Aesthetics and Computation Group), 1999
 // Ported by Golan Levin, 2017
 

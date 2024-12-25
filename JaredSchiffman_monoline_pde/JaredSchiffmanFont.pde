@@ -1,12 +1,12 @@
-// By Jared Shiffman https://www.perchinteractive.com/
+// By Jared Schiffman https://www.perchinteractive.com/
 // MIT Media Lab ACG (Aesthetics and Computation Group), 1999
 // Ported by Golan Levin, 2017
 
-class JaredShiffmanFont {
+class JaredSchiffmanFont {
 
   jsVectorFont F;
 
-  JaredShiffmanFont() {
+  JaredSchiffmanFont() {
     F = new jsVectorFont();
     
     F.letters[44].numPoints = 7;
