@@ -4,17 +4,19 @@
 
 #### Contents
 
-* p5.js Parser/Renderer for Single-Line SVG Fonts
-* Minimal Hershey SVG Font, Inlined in p5.js
-* p5.js port of Kamp's HP1345A vector font
-* p5.js port of Logg/Hudson's *Asteroids* font
-* p5.js port of Jared Schiffman's Font
+* [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
+* [Minimal Hershey SVG Font, Inlined in p5.js](#minimal-hershey-svg-font-inlined-in-p5js)
+* [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
+* [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
+* [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
+* [Additional Resources](#additional-resources)
+* [Some Inspirational Media](#some-inspirational-media)
 
 ---
 
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_svg_fonts/sketch.js) that parses and displays SVG Fonts. *(As of 12/26/2024, this program cannot yet parse SVG fonts with `C` (curve) path points.)* Developed by Golan Levin in 2024:
+SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_svg_fonts/sketch.js) that parses and displays SVG Fonts. Developed by Golan Levin in 2024:
 
 * In [this repository](p5_svg_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
@@ -30,6 +32,8 @@ A large archive of SVG single-line fonts is included [here](p5_svg_fonts/single_
 * [https://www.templatemaker.nl/singlelinetext](https://www.templatemaker.nl/singlelinetext/)
 
 ![EMSCapitol_svg_font.png](p5_svg_fonts/EMSCapitol_svg_font.png)
+
+*(Note: of 12/26/2024, this program cannot yet parse SVG fonts with `C` (Bezier curve) path points, such as [Relief](https://github.com/isdat-type/Relief-SingleLine).)*
 
 ---
 
@@ -93,6 +97,26 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ---
 
+### Some Inspirational Media
+
+Research and artworks concerned with single-line fonts.
+
+* [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer
+* [Textension: Word Processor Variations (1999)](https://vimeo.com/6121230) by JT Nimoy
+* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni
+* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin
+
+---
+
 ### Keywords
 
 single line font, single stroke font, monoline font, vector font, engraving font, skeleton font, AxiDraw, Hershey font, #plotterTwitter, procedural font, creative coding, p5.js, SVG Fonts, Processing. 
+
+---
+
+### Todo
+
+* Parse SVG Fonts with Curves (ReliefSingleLine-Regular.svg, TwinSans.svg)
+* Parse single-line TTF fonts
+* Animation + SVG example
+
