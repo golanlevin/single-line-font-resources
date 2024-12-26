@@ -6,7 +6,7 @@
 
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-SVG 1.1 Fonts are a little-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [This p5.js program](p5_svg_fonts/sketch.js), developed by Golan Levin in 2024, parses and displays SVG Fonts. *(As of 12/26/2024, this program cannot yet parse SVG fonts with `C` (curve) path points.)*
+SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_svg_fonts/sketch.js) that parses and displays SVG Fonts. *(As of 12/26/2024, this program cannot yet parse SVG fonts with `C` (curve) path points.)* Developed by Golan Levin in 2024:
 
 * In [this repository](p5_svg_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
