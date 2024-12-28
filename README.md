@@ -14,16 +14,25 @@
 
 ---
 
+### p5.js Parser/Renderer for Single-Line TTF Fonts
+
+
+
+p5_single_line_ttf_fonts
+
+
+---
+
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_svg_fonts/sketch.js) that parses and displays SVG Fonts. Developed by Golan Levin in 2024:
+SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts. Developed by Golan Levin in 2024:
 
-* In [this repository](p5_svg_fonts/sketch.js)
+* In [this repository](p5_single_line_svg_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
 
-![HersheySans1_svg_font.png](p5_svg_fonts/HersheySans1_svg_font.png)
+![HersheySans1_svg_font.png](p5_single_line_svg_fonts/HersheySans1_svg_font.png)
 
-A large archive of SVG single-line fonts is included [here](p5_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. Some additional resources for SVG fonts are:
+A large archive of SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. Some additional resources for SVG fonts are:
 
 * [https://gitlab.com/oskay/svg-fonts](https://gitlab.com/oskay/svg-fonts)
 * [https://github.com/Shriinivas/inkscapestrokefont](https://github.com/Shriinivas/inkscapestrokefont)
@@ -31,7 +40,7 @@ A large archive of SVG single-line fonts is included [here](p5_svg_fonts/single_
 * [https://singlelinefonts.com/collections/svg-fonts](https://singlelinefonts.com/collections/svg-fonts)
 * [https://www.templatemaker.nl/singlelinetext](https://www.templatemaker.nl/singlelinetext/)
 
-![EMSCapitol_svg_font.png](p5_svg_fonts/EMSCapitol_svg_font.png)
+![EMSCapitol_svg_font.png](p5_single_line_svg_fonts/EMSCapitol_svg_font.png)
 
 *(Note: of 12/26/2024, this program cannot yet parse SVG fonts with `C` (Bezier curve) path points, such as [Relief](https://github.com/isdat-type/Relief-SingleLine).)*
 
