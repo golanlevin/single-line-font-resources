@@ -1,6 +1,6 @@
 # p5-single-line-font-resources
 
-![banner.png](banner.png)
+![banner.png](img/banner.png)
 
 *This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining.*
 
@@ -173,6 +173,7 @@ Here are some inspirational artworks and research projects concerned with single
 
 * Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
+* [Douglas Hofstadter fonts](img/hofstadter.png), from *Fluid Concepts and Creative Analogies*, 1987
 * Adapt Knuth's Metafont to p5?
 
 ---
