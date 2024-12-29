@@ -11,6 +11,7 @@ This directory contains the following:
 2. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have actual, proper curves instead of polylines. 
 3. Unfortunately, inconsistencies in certain single-line TTF fonts require special case handling for certain closed characters (e.g., `B`,`D`,`O`,`Q`,`a`,`o`,`8`,`0`). You can find the case handling code [here](sketch.js#L146). This varies on a per-font basis; YMMV.
 4. Certain fonts (MACHTGDR.TTF, MACHTHSC.TTF, MACHTSCR.TTF) do not use standard ASCII/unicode codepoints (e.g. `A`=65), but instead use unicode codepoints in the [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas) (Private Use Area) range. These have been corrected for in the code [here](sketch.js#L84).
+5. The p5.js program makes use of [opentype.js](https://opentype.js.org/).
 
 
 
