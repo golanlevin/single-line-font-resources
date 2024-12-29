@@ -20,7 +20,8 @@
 Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including p5's built-in `text()` command, as well as commercial tools like Adobe Illustrator. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have real curves instead of polylines. 
 
 * [Archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
-* Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM)
+* Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/sketch.js), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM)
+* Important [technical notes](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5 program
 
 ![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
 
@@ -51,7 +52,7 @@ A large archive of SVG single-line fonts is included [here](p5_single_line_svg_f
 
 ### Minimal Hershey SVG Font, Inlined in p5.js
 
-*This ultra-minimal program presents an Hershey SVG font inlined in p5.js, with no loading of external resources. For a full-featured Hershey Font library for p5.js, see [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js).*
+*This ultra-minimal program presents a Hershey SVG font inlined in p5.js, with no loading of external resources. For a full-featured Hershey Font library for p5.js, see [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js).*
 
 [Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the earliest digital fonts. The various Hershey fonts have been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above.
 
