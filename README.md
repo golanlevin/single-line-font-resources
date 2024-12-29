@@ -1,5 +1,7 @@
 # p5-single-line-font-resources
 
+![banner.png](banner.png)
+
 *This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining.*
 
 #### Contents
@@ -155,6 +157,6 @@ Here are some inspirational artworks and research projects concerned with single
 
 ### Keywords
 
-single line font, single stroke font, monoline font, vector font, engraving font, skeleton font, AxiDraw, Hershey font, #plotterTwitter, procedural font, creative coding, p5.js, SVG Fonts, Processing. 
+single line font, single stroke font, monoline font, vector font, engraving font, skeleton font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, #plotterTwitter, procedural font, creative coding, p5.js, Processing. 
 
 
