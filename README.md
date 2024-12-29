@@ -59,7 +59,6 @@ Some additional resources for SVG Fonts are:
 
 [Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the earliest digital fonts. The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
-
 #### hershey-font-demo-svg
 
 This program ([**here**](Hershey/hershey-font-demo-svg/) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/HufYAfKQr)) provides a simple introduction to the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library. It demonstrates how to: 
@@ -81,6 +80,11 @@ This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.o
 3. "Single Line", in which all text is an unbroken polyline. 
 
 [![pointwise-hershey-to-svg](Hershey/pointwise-hershey-to-svg/pointwise_hershey_screenshot.png)](Hershey/pointwise-hershey-to-svg/)
+
+Also noteworthy are these additional Hershey+p5 resources:
+
+* A helpful [Hershey Font Editor](https://hfedit.glitch.me/), also by Lingdong Huang.
+* [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
 
 ---
 
@@ -133,13 +137,10 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### Additional Resources
 
-* [Drawing with Machines Typography resources](https://github.com/golanlevin/DrawingWithMachines/blob/main/lectures/topics/type/README.md)
-* [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), imajeenyus.com
-* [Drawingbots.net Text Resources](https://drawingbots.net/resources#12)
+* [*Drawing with Machines* Typography resources](https://github.com/golanlevin/DrawingWithMachines/blob/main/lectures/topics/type/README.md) by Golan Levin
+* [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), by imajeenyus.com
 * [OneLineFonts.com](https://www.onelinefonts.com/), a commercial foundry for single-line fonts.
-* [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) by Lingdong Huang, a full-featured library (*recommended*). 
-* A helpful [Hershey Font Editor](https://hfedit.glitch.me/), also by Lingdong Huang.
-* [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
+* [Drawingbots.net Text Resources](https://drawingbots.net/resources#12)
 
 ---
 
