@@ -1,6 +1,6 @@
 // p5.js program to load and display single-line TrueType fonts.
-// See: http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml
-// Golan Levin, December 2024
+// Golan Levin, December 2024. See: 
+// https://github.com/golanlevin/p5-single-line-font-resources/
 
 /*
 TTF Font credits: 
@@ -14,10 +14,14 @@ TTF Font credits:
   MACHTSCR.TTF - Engineering Geometry Systems
   machtgth.ttf - Engineering Geometry Systems
   machtssr-gm.ttf - Engineering Geometry Systems
+  ReliefSingleLine-Regular.ttf - ISDAT
 */ 
 
 let ttfFontName; 
 let ttfFontData;
+
+// Some fonts need this true; see line 154. YMMV!
+let bDoSpecialCaseForClosedGlyphs = false;
 
 //------------------------------------------
 function preload() {
@@ -25,7 +29,8 @@ function preload() {
   // Choose a single-stroke TTF from the dir directory.
   // Call the async function and wait for it to load.
   
-  ttfFontName = "1CamBam_Stick_9.ttf"; // 1-9
+  ttfFontName = "ReliefSingleLine-Regular.ttf";
+  // ttfFontName = "1CamBam_Stick_9.ttf"; // 1-9
   // ttfFontName = "ORTE1LTT.TTF"; 
   // ttfFontName = "RhSS.ttf"; 
   // ttfFontName = "MecSoft_Font.ttf"; 
@@ -54,14 +59,18 @@ function draw() {
   stroke(255);
   strokeWeight(1); 
   
-  let fontScale = 48;
+  let fontScale = 44;
   drawTTFString(ttfFontName, 45, 90, fontScale); 
   drawTTFString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 45, 160, fontScale); 
   drawTTFString("abcdefghijklmnopqrstuvwxyz", 45, 230, fontScale); 
   drawTTFString("1234567890", 45, 300, fontScale); 
   drawTTFString("!@#$%^&*+=?\"',-./:;", 45, 370, fontScale); 
   drawTTFString("()[]{}<>\\_`|~°¢£©±", 45, 440, fontScale); 
-  drawTTFString("Hello World!", 45, 500, fontScale); 
+  drawTTFString("Hello World!", 45, 510, fontScale); 
+}
+
+function keyPressed(){
+  save(ttfFontName + "_demo.png"); 
 }
 
 
@@ -143,8 +152,9 @@ function drawTTFString(str, x, y, s) {
         
         // Special case closed glyph handling (fml)
         // NOTE: add "a" to use 1CamBam_Stick_1.ttf
-        const specialCase = ["B","D","O","Q","o","8","0"];
-        const bClosed = specialCase.includes(char); 
+        const specialCase = ["B","D","d","O","o","Q","8","0"];
+        let bClosed = specialCase.includes(char); 
+        bClosed = bClosed & bDoSpecialCaseForClosedGlyphs; 
         
         drawGlyphData(glyphData, cursorX, y, s, bClosed);
         cursorX += glyphData.advanceWidth * scaleFactor;
