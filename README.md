@@ -29,7 +29,7 @@ Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not 
 
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts. Developed by Golan Levin in 2024:
+SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG 1.1 Fonts, developed by Golan Levin in 2024:
 
 * In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
@@ -103,7 +103,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 * [Drawing with Machines Typography resources](https://github.com/golanlevin/DrawingWithMachines/blob/main/lectures/topics/type/README.md)
 * [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), imajeenyus.com
 * [Drawingbots.net Text Resources](https://drawingbots.net/resources#12)
-* https://www.onelinefonts.com/
+* [OneLineFonts.com](https://www.onelinefonts.com/), a commercial foundry for single-line fonts.
 * [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) by Lingdong Huang, a full-featured library (*recommended*). 
 * A helpful [Hershey Font Editor](https://hfedit.glitch.me/), also by Lingdong Huang.
 * [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
@@ -112,12 +112,13 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### Some Inspirational Media
 
-Research and artworks concerned with single-line fonts.
+Here are some research projects and artworks concerned with single-line fonts.
 
-* [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer
-* [Textension: Word Processor Variations (1999)](https://vimeo.com/6121230) by JT Nimoy
-* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni
-* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin
+* [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer, 2015.
+* [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
+* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
+* [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
+* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin, 2024
 
 ---
 
