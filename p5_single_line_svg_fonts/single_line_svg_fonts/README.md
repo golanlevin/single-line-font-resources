@@ -1,12 +1,14 @@
 # SVG Single Line Fonts
 
-The SVG 1.1 Fonts in this directory, and all information in this README, are mirrored from https://gitlab.com/oskay/svg-fonts. These fonts were curated, compiled, and prepared by Evil Mad Scientist. 
+The SVG 1.1 Fonts in this directory, and all information in this README, are mirrored from [https://gitlab.com/oskay/svg-fonts](https://gitlab.com/oskay/svg-fonts). These fonts were curated, compiled, and prepared by Evil Mad Scientist. 
 
 ----
 
 #### Font license information
 
-Individual credits and license information are embedded within the SVG fonts in this repository. The classic Hershey fonts included are derived from work by Dr. A. V. Hershey. Additional modern "EMS" fonts in this distribution are derivatives created from fonts licensed under the [SIL Open Font License](https://scripts.sil.org/OFL). Credit and links for these fonts are given below. Please see the individual font files for additional information.
+Individual credits and license information are embedded within the SVG fonts in this repository. The classic Hershey fonts included are derived from work by Dr. A. V. Hershey, but have been converted (by EMSL) into the SVG 1.1 Font format. 
+
+Additional modern "EMS" fonts in this distribution are derivatives created from fonts licensed under the [SIL Open Font License](https://scripts.sil.org/OFL). Credit and links for these fonts are given below. Please see the individual font files for additional information.
 
 The [Relief](https://github.com/isdat-type/Relief-SingleLine/) font is by students of the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse / isdaT, under the direction of by François Chastanet. Note that *ReliefSingleLine-Regular.svg* and *TwinSans.svg* are not polyline fonts, but instead use the SVG `C` (curveTo) command. 
 
