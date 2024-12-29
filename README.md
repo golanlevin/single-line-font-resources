@@ -173,7 +173,7 @@ Here are some inspirational artworks and research projects concerned with single
 
 * Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
-* [Douglas Hofstadter fonts](img/hofstadter.png), from *Fluid Concepts and Creative Analogies*, 1987
+* [Letter Spirit fonts](img/hofstadter_letter_spirit.png) by Douglas Hofstadter, *Fluid Concepts and Creative Analogies*, 1987
 * Adapt Knuth's Metafont to p5?
 
 ---
