@@ -17,7 +17,7 @@
 
 ### p5.js Parser/Renderer for Single-Line TTF Fonts
 
-Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including p5's built-in `text()` command, as well as commercial tools like Adobe Illustrator. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have real curves instead of polylines. 
+Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including p5's built-in `text()` command, as well as commercial tools like Adobe Illustrator. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have real curves instead of polylines. The program makes use of [opentype.js](https://opentype.js.org/).
 
 * [Archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
 * Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/sketch.js), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM)
