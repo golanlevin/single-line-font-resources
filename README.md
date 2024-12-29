@@ -4,6 +4,7 @@
 
 #### Contents
 
+* [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
 * [Minimal Hershey SVG Font, Inlined in p5.js](#minimal-hershey-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
