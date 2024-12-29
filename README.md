@@ -100,10 +100,10 @@ The typeface happens to be a Hershey font, converted to the SVG Font format. The
 
 Vector font from the character generator ROM of the HP1345A digital vector display (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, ported to JavaScript by Golan Levin. This p5.js version is adapted from his work, and loads data from the original ROM binaries.
 
-* ROM-loading version [here](HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
-* Data-inlined version (*recommended*) [here](HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
+* ROM-loading version [here](HP1345A/HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
+* Data-inlined version (*recommended*) [here](HP1345A/HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
 
-![hp1345a_screenshot.png](HP1345A_single_line_font/hp1345a_screenshot.png)
+![hp1345a_screenshot.png](HP1345A/HP1345A_single_line_font/hp1345a_screenshot.png)
 
 ---
 
@@ -122,11 +122,11 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 
 Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
 
-* In [this repository](JaredSchiffman_single_line_font/sketch.js)
+* In [this repository](JaredSchiffman/JaredSchiffman_single_line_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)
-* [Processing (Java) version](JaredSchiffman_monoline_pde/)
+* [Processing (Java) version](JaredSchiffman/JaredSchiffman_monoline_pde/)
 
-![JaredSchiffman_screenshot.png](JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
+![JaredSchiffman_screenshot.png](JaredSchiffman/JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
 
 
 ---
