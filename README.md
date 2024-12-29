@@ -139,7 +139,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 **minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural single-stroke vector font by Golan Levin (2024), intended purely as a pedagogic example in code-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness or legibility. (The `M` and `W` are particularly faulty.)
 
-Each of the `x` and `y` values in minf's glyph coordinates are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by just `26*8*2 = 416 bits = 52 bytes` of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to a 72-byte string. A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+Each of the `x` and `y` values in minf's glyph coordinates are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by just (26 letters * 4 points * 2 dimensions * 2 bits = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to a 72-byte string. A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
 
@@ -164,8 +164,8 @@ Here are some inspirational artworks and research projects concerned with single
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
 * [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
 * [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019.
-* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin, 2024
-
+* [Letterform Variations](https://letterformvariations.com/book/) by Nigel Cottier, 2021.
+* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin, 2024.
 
 ---
 
