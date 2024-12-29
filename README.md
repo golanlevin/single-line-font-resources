@@ -1,11 +1,12 @@
 # p5-single-line-font-resources
 
-*This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding and pen-plotting.*
+*This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining.*
 
 #### Contents
 
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
+* [(Classic) Hershey Fonts in p5.js](#classic-hershey-fonts-in-p5js)
 * [Minimal SVG Font, Inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
@@ -19,8 +20,8 @@
 
 Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including p5's built-in `text()` command, as well as commercial tools like Adobe Illustrator. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have real curves instead of polylines. The program makes use of [opentype.js](https://opentype.js.org/).
 
-* [Archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
-* Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/sketch.js), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM). By Golan Levin.
+* An [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, primarily via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
+* A p5.js program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/sketch.js), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM). By Golan Levin.
 * Don't ignore these important [technical notes](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5.js code!
 
 ![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
@@ -56,17 +57,28 @@ Some additional resources for SVG Fonts are:
 
 [Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the earliest digital fonts. The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
+
+#### hershey-font-demo-svg
+
+This program ([**here**](Hershey/hershey-font-demo-svg/) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/HufYAfKQr)) provides a simple introduction to the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library. It demonstrates how to: 
+
+* Display text using the default Hershey font
+* Display text using a specific Hershey font
+* Display text using Lingdong's Chinese Hershey fonts
+* Position a Hershey glyph with a specific translation, scale, and rotation.
+* Export these graphics to an SVG file, using the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library
+
+[![hershey_font_demo](Hershey/hershey-font-demo-svg/hershey_font_demo_screenshot.png)](Hershey/hershey-font-demo-svg/)
+
 #### pointwise-hershey-to-svg
 
-This program ([**here**](Hershey/pointwise-hershey-to-svg) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/2PJpYMHo1)) uses the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library to export SVG files of the graphics rendered onscreen. In particular, it uses the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library to render classic Hershey fonts in 3 different ways: 
+This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/2PJpYMHo1)) uses the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library to export SVG files of the graphics rendered onscreen. In particular, it uses the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library to render classic Hershey fonts in 3 different ways: 
 
 1. "Simple", using Lingdong's library API;
 2. "Custom", allowing for your own pointwise manipulations;
 3. "Single Line", in which all text is an unbroken polyline. 
 
-[![pointwise-hershey-to-svg](Hershey/pointwise-hershey-to-svg/pointwise_hershey_screenshot.png)](Hershey/pointwise-hershey-to-svg)
-
-
+[![pointwise-hershey-to-svg](Hershey/pointwise-hershey-to-svg/pointwise_hershey_screenshot.png)](Hershey/pointwise-hershey-to-svg/)
 
 ---
 
