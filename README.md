@@ -1,6 +1,6 @@
 # p5-single-line-font-resources
 
-*This is a repository of p5.js programs for loading and displaying a variety of different single-line vector fonts (also called single-stroke or monoline fonts). Such fonts are well-suited to creative coding and pen-plotting. Code is presented to load single-line fonts in TTF, SVG Font, Hershey Font, and other formats.*
+*This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding and pen-plotting.*
 
 #### Contents
 
@@ -21,7 +21,7 @@ Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not 
 
 * [Archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
 * Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/sketch.js), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM)
-* Important [technical notes](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5 program
+* Don't ignore these important [technical notes](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5.js code!
 
 ![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
 
@@ -34,9 +34,11 @@ SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.or
 * In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
 
-![HersheySans1_svg_font.png](p5_single_line_svg_fonts/HersheySans1_svg_font.png)
+![HersheySans1_svg_font.png](p5_single_line_svg_fonts/img/p5_svg_fonts_screenshot.png)
 
-A large archive of SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. Some additional resources for SVG fonts are:
+Shown above is the [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font, developed by a team at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
+
+A large archive of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. Some additional resources for SVG fonts are:
 
 * [https://gitlab.com/oskay/svg-fonts](https://gitlab.com/oskay/svg-fonts)
 * [https://github.com/Shriinivas/inkscapestrokefont](https://github.com/Shriinivas/inkscapestrokefont)
@@ -44,9 +46,7 @@ A large archive of SVG single-line fonts is included [here](p5_single_line_svg_f
 * [https://singlelinefonts.com/collections/svg-fonts](https://singlelinefonts.com/collections/svg-fonts)
 * [https://www.templatemaker.nl/singlelinetext](https://www.templatemaker.nl/singlelinetext/)
 
-![EMSCapitol_svg_font.png](p5_single_line_svg_fonts/EMSCapitol_svg_font.png)
-
-*(Note: of 12/26/2024, this program cannot yet parse SVG fonts with `C` (Bezier curve) path points, such as [Relief](https://github.com/isdat-type/Relief-SingleLine).)*
+![HersheySans1_svg_font.png](p5_single_line_svg_fonts/single_line_svg_fonts/samples.png)
 
 ---
 
@@ -112,7 +112,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### Some Inspirational Media
 
-Here are some research projects and artworks concerned with single-line fonts.
+Here are some inspirational artworks and research projects concerned with single-line fonts.
 
 * [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer, 2015.
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
@@ -126,11 +126,4 @@ Here are some research projects and artworks concerned with single-line fonts.
 
 single line font, single stroke font, monoline font, vector font, engraving font, skeleton font, AxiDraw, Hershey font, #plotterTwitter, procedural font, creative coding, p5.js, SVG Fonts, Processing. 
 
----
-
-### Todo
-
-* Parse SVG Fonts with Curves (ReliefSingleLine-Regular.svg, TwinSans.svg)
-* Parse single-line TTF fonts
-* Animation + SVG example
 
