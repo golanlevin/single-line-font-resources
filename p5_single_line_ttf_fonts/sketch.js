@@ -4,7 +4,7 @@
 
 /*
 TTF Font credits: 
-  1CamBam_Stick_XX.ttf - George Race
+  1CamBam_Stick_#.ttf - George Race
   ORTE1LTT.TTF - (Orach Technic) Unknown
   RhSS.ttf - Robert McNeel & Associates
   MecSoft_Font.ttf - Robert McNeel & Associates
@@ -22,7 +22,7 @@ let ttfFontData;
 //------------------------------------------
 function preload() {
   let dir = "single_stroke_ttf_fonts/"; 
-  // Select a single-stroke TTF from the dir directory
+  // Choose a single-stroke TTF from the dir directory.
   // Call the async function and wait for it to load.
   
   ttfFontName = "1CamBam_Stick_9.ttf"; // 1-9
@@ -41,7 +41,7 @@ function preload() {
 
 //------------------------------------------
 function setup() {
-  createCanvas(800, 500);
+  createCanvas(800, 600);
   ttfFontData.then((data) => {
     // The font data has been loaded.
     console.log("Font data is ready:", data);
@@ -55,12 +55,13 @@ function draw() {
   strokeWeight(1); 
   
   let fontScale = 48;
-  drawString(ttfFontName, 45, 90, fontScale); 
-  drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 45, 160, fontScale); 
-  drawString("abcdefghijklmnopqrstuvwxyz", 45, 230, fontScale); 
-  drawString("1234567890", 45, 300, fontScale); 
-  drawString("!@#$%^&*+=?\"',-./:;", 45, 370, fontScale); 
-  drawString("()[]{}<>\\_`|~°¢£©±", 45, 440, fontScale); 
+  drawTTFString(ttfFontName, 45, 90, fontScale); 
+  drawTTFString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 45, 160, fontScale); 
+  drawTTFString("abcdefghijklmnopqrstuvwxyz", 45, 230, fontScale); 
+  drawTTFString("1234567890", 45, 300, fontScale); 
+  drawTTFString("!@#$%^&*+=?\"',-./:;", 45, 370, fontScale); 
+  drawTTFString("()[]{}<>\\_`|~°¢£©±", 45, 440, fontScale); 
+  drawTTFString("Hello World!", 45, 500, fontScale); 
 }
 
 
@@ -118,7 +119,7 @@ async function loadFontAndExtractOutlines(fontPath) {
 }
 
 //------------------------------------------
-function drawString(str, x, y, s) {
+function drawTTFString(str, x, y, s) {
   let cursorX = x; // Start position for drawing
   let scaleFactor = s / 1000.0; // Scale factor
 
@@ -164,10 +165,11 @@ function drawGlyphData(outline, dx, dy, s, bClosed) {
 
   // Iterate through the pathCommands using a for loop
   for (let i = 0; i < outline.pathCommands.length; i++) {
+    
     const cmd = outline.pathCommands[i];
     const x = dx + sca * cmd.x;
     const y = dy - sca * cmd.y;
-
+    
     if (cmd.type === "M") {
       // Moveto command: reset the last point
       lastX = null;
@@ -189,6 +191,7 @@ function drawGlyphData(outline, dx, dy, s, bClosed) {
       // Quadratic Bézier curve
       const qx = dx + sca * cmd.x1;
       const qy = dy - sca * cmd.y1;
+      
       if (lastX !== null && lastY !== null) {
         beginShape();
         vertex(lastX, lastY);

@@ -1,6 +1,6 @@
 # p5-single-line-font-resources
 
-*This is a repository of p5.js programs for loading and displaying a variety of different procedural single-line vector fonts (also called single-stroke or monoline fonts). Such fonts are well-suited to creative coding and pen-plotting.*
+*This is a repository of p5.js programs for loading and displaying a variety of different single-line vector fonts (also called single-stroke or monoline fonts). Such fonts are well-suited to creative coding and pen-plotting. Code is presented to load single-line fonts in TTF, SVG Font, Hershey Font, and other formats.*
 
 #### Contents
 
@@ -16,10 +16,12 @@
 
 ### p5.js Parser/Renderer for Single-Line TTF Fonts
 
+Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including p5's built-in `text()` command, as well as commercial tools like Adobe Illustrator. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have real curves instead of polylines. 
 
+* [Archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
+* Program to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/), & at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM)
 
-p5_single_line_ttf_fonts
-
+![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
 
 ---
 
@@ -27,7 +29,7 @@ p5_single_line_ttf_fonts
 
 SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts. Developed by Golan Levin in 2024:
 
-* In [this repository](p5_single_line_svg_fonts/sketch.js)
+* In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
 
 ![HersheySans1_svg_font.png](p5_single_line_svg_fonts/HersheySans1_svg_font.png)
