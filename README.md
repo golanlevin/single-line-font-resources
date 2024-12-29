@@ -153,7 +153,17 @@ Here are some inspirational artworks and research projects concerned with single
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
 * [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
+* [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019.
 * [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin, 2024
+
+
+---
+
+### Todo 
+
+* Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
+* Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
+* Adapt Knuth's Metafont to p5?
 
 ---
 
