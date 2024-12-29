@@ -51,12 +51,6 @@ function draw() {
   renderHersheyVertices("Line.", FONT_HERSHEY.SCRIPT_SIMPLEX, 50, 320, 3.0); 
   endShape(); 
 
-  
-  if (bDoExportSvg){
-    endRecordSVG();
-    bDoExportSvg = false;
-  }
-
   //---------------
   // Export SVG file if requested
   if (bDoExportSvg) {
