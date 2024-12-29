@@ -9,7 +9,7 @@ This directory contains the following:
 
 1. Some of the TTFs provided here are actually *double-line* fonts. These are similar to outline fonts, but have infinitely thin bodies (i.e. no "fill"). They have twice as much data as necessary (clockwise and counter-clockwise contours), and if you use these fonts as paths for cutting or plotting, you will see them double back on themselves. A demonstration of this can be found [here](https://editor.p5js.org/golan/sketches/WULnyBSQ5).
 2. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have actual, proper curves instead of polylines. 
-3. Unfortunately, inconsistencies in certain single-line TTF fonts require special case handling for certain closed characters (e.g., `B`,`D`,`O`,`Q`,`a`,`o`,`8`,`0`). You can find the case handling code [here](sketch.js#L146).
+3. Unfortunately, inconsistencies in certain single-line TTF fonts require special case handling for certain closed characters (e.g., `B`,`D`,`O`,`Q`,`a`,`o`,`8`,`0`). You can find the case handling code [here](sketch.js#L146). This varies on a per-font basis; YMMV.
 4. Certain fonts (MACHTGDR.TTF, MACHTHSC.TTF, MACHTSCR.TTF) do not use standard ASCII/unicode codepoints (e.g. `A`=65), but instead use unicode codepoints in the [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas) (Private Use Area) range. These have been corrected for in the code [here](sketch.js#L84).
 
 
