@@ -13,6 +13,7 @@
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
+* [*minf*, an Ultra-Minimal Procedural Monoline Font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional Resources](#additional-resources)
 * [Some Inspirational Media](#some-inspirational-media)
 
@@ -132,6 +133,15 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ![JaredSchiffman_screenshot.png](JaredSchiffman/JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
 
+---
+
+### *minf*, an Ultra-Minimal Procedural Monoline Font
+
+**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural single-stroke vector font by Golan Levin (2024), intended purely as a pedagogic example in code-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness or legibility. (The `M` and `W` are particularly faulty.)
+
+Each of the `x` and `y` values in minf's glyph coordinates are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by just `26*8*2 = 416 bits = 52 bytes` of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to a 72-byte string. A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+
+![minf.png](minf/minf.png)
 
 ---
 
