@@ -58,7 +58,7 @@ Some additional resources for SVG 1.1 Fonts are:
 
 ### (Classic) Hershey Fonts in p5.js
 
-[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the earliest digital fonts. The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
+[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
 #### hershey-font-demo-svg
 
@@ -74,7 +74,7 @@ This program ([**here**](Hershey/hershey-font-demo-svg/) or at [editor.p5js.org]
 
 #### pointwise-hershey-to-svg
 
-This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/2PJpYMHo1)) uses the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library to export SVG files of the graphics rendered onscreen. In particular, it uses the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library to render classic Hershey fonts in 3 different ways: 
+This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/2PJpYMHo1)) also uses the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library to export SVG files of the graphics rendered onscreen. In particular, this demo shows how the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library can be used to render Hershey fonts in 3 different ways: 
 
 1. "Simple", using Lingdong's library API;
 2. "Custom", allowing for your own pointwise manipulations;
@@ -84,7 +84,7 @@ This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.o
 
 Also noteworthy are these additional Hershey+p5 resources:
 
-* A helpful [Hershey Font Editor](https://hfedit.glitch.me/), also by Lingdong Huang.
+* A helpful [Hershey Font Editor](https://hfedit.glitch.me/), by Lingdong Huang.
 * [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
 
 ---
@@ -95,7 +95,7 @@ Also noteworthy are these additional Hershey+p5 resources:
 
 The program presented [here](Hershey/Hershey_inline_font/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5) displays an *inlined* SVG font in p5.js. This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. 
 
-The typeface happens to be a Hershey font, converted to the SVG Font format. Note that various Hershey fonts have been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above. This code been adapted from [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
+The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above. This code been adapted from [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
 
 ![hershey_inline_screenshot.png](Hershey/Hershey_inline_font/hershey_inline_screenshot.png)
 
@@ -137,9 +137,9 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### *minf*, an Ultra-Minimal Procedural Monoline Font
 
-**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural single-stroke vector font by Golan Levin (2024), intended purely as a pedagogic example in code-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness or legibility. (The `M` and `W` are particularly faulty.)
+**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural single-stroke vector font by Golan Levin (2024), intended purely as a pedagogic example in typography-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness, legibility, or utility (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
 
-Each of the `x` and `y` values in minf's glyph coordinates are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by just (26 letters * 4 points * 2 dimensions * 2 bits = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to a 72-byte string. A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
 
@@ -151,7 +151,7 @@ Each of the `x` and `y` values in minf's glyph coordinates are stored with just 
 * [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), by imajeenyus.com
 * [Singlelinefonts.com](https://singlelinefonts.com/), a commercial foundry for single-line fonts.
 * [OneLineFonts.com](https://www.onelinefonts.com/), another commercial foundry for single-line fonts.
-* [Drawingbots.net Text Resources](https://drawingbots.net/resources#12)
+* [Drawingbots.net Text Resources](https://drawingbots.net/resources#12), information for plotter enthusiasts.
 
 ---
 
@@ -162,6 +162,7 @@ Here are some inspirational artworks and research projects concerned with single
 * [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer, 2015.
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
+* [Typode](https://moebio.com/research/typode/) interactive by Santiago Ortiz, 2013.
 * [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
 * [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019.
 * [Letterform Variations](https://letterformvariations.com/book/) by Nigel Cottier, 2021.
@@ -172,6 +173,7 @@ Here are some inspirational artworks and research projects concerned with single
 ### Todo 
 
 * Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
+* Adapt [Typode](https://moebio.com/research/typode/) by Santiago Ortiz, 2013
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * [Letter Spirit fonts](img/hofstadter_letter_spirit.png) by Douglas Hofstadter, *Fluid Concepts and Creative Analogies*, 1987; Use as the basis for creating an SVG 1.1 Font *exporter*.
 
@@ -180,4 +182,3 @@ Here are some inspirational artworks and research projects concerned with single
 ### Keywords
 
 single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, pen plotting, #plotterTwitter, creative coding, p5.js, JavaScript, Processing. 
-
