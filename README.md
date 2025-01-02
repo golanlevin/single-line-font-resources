@@ -8,7 +8,7 @@
 
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
-* [(Classic) Hershey Fonts in p5.js](#classic-hershey-fonts-in-p5js)
+* [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [Minimal SVG Font, Inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
@@ -57,7 +57,7 @@ Some additional resources for SVG 1.1 Fonts are:
 
 ---
 
-### (Classic) Hershey Fonts in p5.js
+### p5.js Parser/Renderer for (Classic) Hershey Fonts
 
 [Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
@@ -69,7 +69,7 @@ This program ([**here**](Hershey/hershey-font-demo-svg/) or at [editor.p5js.org]
 * Display text using a specific Hershey font
 * Display text using Lingdong's Chinese Hershey fonts
 * Position a Hershey glyph with a specific translation, scale, and rotation.
-* Export these graphics to an SVG file, using the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library
+* *Export* these graphics to an SVG file, using the [p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) library
 
 [![hershey_font_demo](Hershey/hershey-font-demo-svg/hershey_font_demo_screenshot.png)](Hershey/hershey-font-demo-svg/)
 
@@ -138,20 +138,20 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### p5.js port of Moebio's *Typode* Font
 
-[*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/) (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. Ported to p5.js by Golan Levin, January 2025; presented here with permission. Typode is available: 
+[*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, grid-based, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/) (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. *Typode* was ported to p5.js by Golan Levin in January 2025, and is presented here with permission. A p5.js sketch to parse and display *Typode* is available: 
 
 * In [this repository](moebio_typode/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
-![moebio_typode_screenshot.png](moebio_typode/moebio_typode_screenshot.png)
+[![moebio_typode_screenshot.png](moebio_typode/moebio_typode_screenshot.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
 ---
 
 ### *minf*, an Ultra-Minimal Procedural Monoline Font
 
-**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in typography-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness, legibility, or utility (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
+**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, grid-based, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in type-golfing. All *minf* glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous line segments. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about the attractiveness, legibility, or utility of *minf* (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
 
-Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
 
