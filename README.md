@@ -138,7 +138,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### p5.js port of Moebio's *Typode* Font
 
-[*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/). (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. Ported to p5.js by Golan Levin, January 2025; presented here with permission. Typode is available: 
+[*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/) (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. Ported to p5.js by Golan Levin, January 2025; presented here with permission. Typode is available: 
 
 * In [this repository](moebio_typode/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
