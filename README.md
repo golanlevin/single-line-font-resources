@@ -163,8 +163,8 @@ Each of the `x` and `y` coordinate values in minf's glyph control points are sto
 
 * [*Drawing with Machines* Typography resources](https://github.com/golanlevin/DrawingWithMachines/blob/main/lectures/topics/type/README.md) by Golan Levin
 * [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), by imajeenyus.com
-* [Singlelinefonts.com](https://singlelinefonts.com/), a commercial foundry for single-line fonts.
-* [OneLineFonts.com](https://www.onelinefonts.com/), another commercial foundry for single-line fonts.
+* [Singlelinefonts.com](https://singlelinefonts.com/), a commercial foundry for single-line fonts by [Leslie Peppers](https://www.linkedin.com/in/leslie-peppers-a80122181/).
+* [OneLineFonts.com](https://www.onelinefonts.com/), a commercial foundry for single-line fonts by [Justin Daniels](https://www.linkedin.com/in/justindaniels/).
 * [Drawingbots.net Text Resources](https://drawingbots.net/resources#12), information for plotter enthusiasts.
 
 ---
