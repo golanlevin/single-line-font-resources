@@ -2,7 +2,7 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining.*
 
 #### Contents
 
@@ -13,6 +13,7 @@
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
+* [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
 * [*minf*, an Ultra-Minimal Procedural Monoline Font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional Resources](#additional-resources)
 * [Some Inspirational Media](#some-inspirational-media)
@@ -135,11 +136,22 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ---
 
+### p5.js port of Moebio's *Typode* Font
+
+[*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/). (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. Ported to p5.js by Golan Levin, January 2025; presented here with permission. Typode is available: 
+
+* In [this repository](moebio_typode/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
+
+![moebio_typode_screenshot.png](moebio_typode/moebio_typode_screenshot.png)
+
+---
+
 ### *minf*, an Ultra-Minimal Procedural Monoline Font
 
-**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural single-stroke vector font by Golan Levin (2024), intended purely as a pedagogic example in typography-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness, legibility, or utility (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
+**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in typography-golfing. All minf glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous lines. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about minf's attractiveness, legibility, or utility (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
 
-Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render minf is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
 
@@ -162,7 +174,7 @@ Here are some inspirational artworks and research projects concerned with single
 * [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer, 2015.
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
-* [Typode](https://moebio.com/research/typode/) interactive by Santiago Ortiz, 2013.
+* [Typode](https://moebio.com/research/typode/) interactive demo by Santiago Ortiz, 2013.
 * [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
 * [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019.
 * [Letterform Variations](https://letterformvariations.com/book/) by Nigel Cottier, 2021.
@@ -173,7 +185,6 @@ Here are some inspirational artworks and research projects concerned with single
 ### Todo 
 
 * Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
-* Adapt [Typode](https://moebio.com/research/typode/) by Santiago Ortiz, 2013
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * [Letter Spirit fonts](img/hofstadter_letter_spirit.png) by Douglas Hofstadter, *Fluid Concepts and Creative Analogies*, 1987; Use as the basis for creating an SVG 1.1 Font *exporter*.
 
