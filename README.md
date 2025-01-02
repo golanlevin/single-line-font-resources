@@ -59,7 +59,9 @@ Some additional resources for SVG 1.1 Fonts are:
 
 ### p5.js Parser/Renderer for (Classic) Hershey Fonts
 
-[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
+[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The coordinate data for 1,377 Hershey font characters was published by NIST in 1976, in [*A Contribution to Computer Typesetting Techniques: Tables of Coordinates for Hershey's Repertory of Occidental Type Fonts and Graphic Symbols*](https://books.google.de/books?id=8DOGhKjPAyEC&redir_esc=y). Frank Grießhammer has published a terrific [video lecture about The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) in 2015.
+
+The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
 #### hershey-font-demo-svg
 
@@ -167,11 +169,10 @@ Each of the `x` and `y` coordinate values in minf's glyph control points are sto
 
 ---
 
-### Some Inspirational Media
+### Some Inspirational Artworks
 
-Here are some inspirational artworks and research projects concerned with single-line fonts.
+Here are some inspirational artworks that make use of single-line fonts.
 
-* [The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) lecture by Frank Grießhammer, 2015.
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
 * [Typode](https://moebio.com/research/typode/) interactive demo by Santiago Ortiz, 2013.
